@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.innovation.dronedelivery.DeliveryConfirmation"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:focusableInTouchMode="true"
+    android:background="#ffdfe6e8">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order# 0123456789"
+        android:id="@+id/textView"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please confirm and accept the delivery"
+        android:id="@+id/textView2"
+        android:textSize="18dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:text="Accept"
+        android:id="@+id/btnAccept"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:background="#ff666d6f"
+        android:textColor="#fff8fff9"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:onClick="btnAccept"/>
+
+    <EditText
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="@string/default_rejection_string"
+        android:id="@+id/textView3"
+        android:layout_weight="0.54"
+        android:layout_below="@+id/btnAccept"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textColorHint="#ffb1b9bb"
+        android:textSize="18dp"/>
+
+    <Button
+        android:layout_width="225dp"
+        android:layout_height="40dp"
+        android:text="Reject"
+        android:id="@+id/btnReject"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_centerHorizontal="true"
+        android:background="#ff666d6f"
+        android:textColor="#fff8fff9"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:onClick="btnReject"/>
+
+</RelativeLayout>

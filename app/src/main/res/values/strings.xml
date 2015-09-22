@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Drone Delivery</string>
+
+    <string name="hello_world"> </string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_accept_delivery">AcceptDelivery</string>
+    <string name="confirmation_statement">Your Order/Package gas been delivered. Please confirm</string>
+    <string name="rejection_statement">Please provide a reason for rejecting the Order/package delivery </string>
+    <string name="title_activity_delivery_confirmation">DeliveryConfirmation</string>
+    <string name="default_rejection_string">If for any reason or problem, please press on Reject button by providing a reason.\n </string>
+    <string name="checkbox_description">I have a delivery to confirm</string>
+</resources>
